@@ -5,7 +5,7 @@ using namespace std;
 void err(int &num)
 {
 
-	while (!(cin>>num))
+	while (!(cin>>num) ||cin.peek() != '\n')
 {
  
     cout << "   ERROR!! A number must be entered.\n   Enter again : ";
@@ -53,7 +53,7 @@ void search();
 
 void market:: menu()
 {int err=0;
-system("color A0");
+system("color 47");
 	string choice;
 	again:
 		system("cls");
